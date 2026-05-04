@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my-app/static/css/main.f68e702b.css",
+    "main.js": "/my-app/static/js/main.b4861304.js",
+    "static/media/xeesh.jpg": "/my-app/static/media/xeesh.4054c3c8e611da42cda1.jpg",
+    "static/media/vince.jpg": "/my-app/static/media/vince.6605b15d33b58dcbed66.jpg",
+    "static/media/whiskers.webp": "/my-app/static/media/whiskers.6a553d574209b00dba48.webp",
+    "static/media/max.jpg": "/my-app/static/media/max.df77725aa4e4e6dd7149.jpg",
+    "static/media/beejhy.jpg": "/my-app/static/media/beejhy.f3882354654dfee08ca4.jpg",
+    "static/media/neggi.jpg": "/my-app/static/media/neggi.a19e5feec45c0492bdad.jpg",
+    "static/media/buddy.webp": "/my-app/static/media/buddy.a30d733ceee7cae1fdf1.webp",
+    "static/media/luna.webp": "/my-app/static/media/luna.ea26aa221bde2c732c2d.webp",
+    "static/media/lourence (2).jpg": "/my-app/static/media/lourence (2).35ee0128eb46b5ed55fb.jpg",
+    "static/media/bella.jpg": "/my-app/static/media/bella.c9187df67b674f5e917e.jpg",
+    "static/media/milo.webp": "/my-app/static/media/milo.edbe71b726304fd62053.webp",
+    "static/media/adrian.jpg": "/my-app/static/media/adrian.67a9b2bd7408b5b377a6.jpg",
+    "index.html": "/my-app/index.html",
+    "main.f68e702b.css.map": "/my-app/static/css/main.f68e702b.css.map",
+    "main.b4861304.js.map": "/my-app/static/js/main.b4861304.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f68e702b.css",
+    "static/js/main.b4861304.js"
+  ]
+}
