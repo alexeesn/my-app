@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoption Form - Pawfect Homes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Pawfect Homes</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="pets.html" class="nav-link">Pets</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link">Login</a></li>
+      </ul>
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  </nav>
+
+  <section class="form-container">
+    <div class="form-card">
+      <h2 class="form-title">Adoption Application</h2>
+      <p class="text-center mb-4">Fill out the form below to start the adoption process</p>
+      <form>
+        <div class="form-group">
+          <label for="fname" class="form-label">Full Name</label>
+          <input type="text" id="fname" class="form-input" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-label">Contact Number</label>
+          <input type="tel" id="phone" class="form-input" placeholder="+1 234 567 8900" required>
+        </div>
+        <div class="form-group">
+          <label for="address" class="form-label">Address</label>
+          <textarea id="address" class="form-input" rows="3" placeholder="123 Main St, City, State, ZIP" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="reason" class="form-label">Why do you want to adopt?</label>
+          <textarea id="reason" class="form-input" rows="5" placeholder="Tell us about yourself and why you'd be a great pet parent..." required></textarea>
+        </div>
+        <button type="submit" class="btn" style="width: 100%;">Submit Application 🐾</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Pawfect Homes</h3>
+          <p>Helping pets find their forever homes since 2020. Every adoption makes a difference.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="pets.html" class="footer-link">Pets</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="adopt.html" class="footer-link">Adopt</a>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+          <p><i class="fas fa-envelope"></i> hello@pawfecthomes.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Pet Street, Animal City</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Pawfect Homes. All rights reserved. | Made with ❤️ for pets everywhere.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('change', function() {
+      if (this.checked) {
+        navMenu.classList.add('active');
+      } else {
+        navMenu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

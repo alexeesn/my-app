@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Pawfect Homes</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Additional About Page Styles */
+    .about-hero {
+      background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+      color: white;
+      padding: 5rem 0;
+      text-align: center;
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .stat-card {
+      text-align: center;
+      padding: 2rem;
+    }
+    
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: block;
+    }
+    
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    
+    .team-card {
+      text-align: center;
+      padding: 2rem;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .team-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .team-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto 1rem;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Pawfect Homes</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="pets.html" class="nav-link">Pets</a></li>
+        <li><a href="about.html" class="nav-link active">About Us</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link">Login</a></li>
+      </ul>
+      <label for="menu-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  </nav>
+
+  <!-- About Hero -->
+  <section class="about-hero">
+    <div class="container">
+      <h1>Our Mission</h1>
+      <p>Creating forever homes for every pet in need</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number">500+</span>
+          <h3>Pets Adopted</h3>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">98%</span>
+          <h3>Success Rate</h3>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">50+</span>
+          <h3>Rescues Partnered</h3>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">24/7</span>
+          <h3>Support</h3>
+        </div>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h2 class="section-title">Our Story</h2>
+        <p style="font-size: 1.2rem; color: #6b7280; line-height: 1.8;">
+          Pawfect Homes was founded in 2020 by a group of animal lovers who saw too many healthy, loving pets 
+          waiting in shelters. We created a platform that matches perfect pets with perfect families using 
+          our unique compatibility system. Every pet we feature has been vet-checked, vaccinated, and loved.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section" style="background: #f8fafc;">
+    <div class="container">
+      <h2 class="section-title">Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">🐶</div>
+          <h3>Sarah Johnson</h3>
+          <p>Founder & CEO</p>
+          <p style="color: #6b7280; font-size: 0.9rem;">15+ years in animal rescue</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">🐱</div>
+          <h3>Mike Chen</h3>
+          <p>Adoption Specialist</p>
+          <p style="color: #6b7280; font-size: 0.9rem;">Veterinary technician</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">❤️</div>
+          <h3>Lisa Rodriguez</h3>
+          <p>Matching Expert</p>
+          <p style="color: #6b7280; font-size: 0.9rem;">Behaviorist certified</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same as index.html) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Pawfect Homes</h3>
+          <p>Helping pets find their forever homes since 2020.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="pets.html" class="footer-link">Pets</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="adopt.html" class="footer-link">Adopt</a>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+          <p><i class="fas fa-envelope"></i> hello@pawfecthomes.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Pawfect Homes. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

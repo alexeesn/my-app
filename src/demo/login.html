@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Pawfect Homes</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Pawfect Homes</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="pets.html" class="nav-link">Pets</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link active">Login</a></li>
+      </ul>
+      <label for="menu-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="menu-toggle">
+  </nav>
+
+  <!-- Auth Container -->
+  <section class="auth-container">
+    <div class="auth-card">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">Welcome Back</h1>
+        <p style="color: #6b7280;">Sign in to your account</p>
+      </div>
+      
+      <input type="radio" id="login-tab" name="auth-tab" checked>
+      <input type="radio" id="register-tab" name="auth-tab">
+      
+      <!-- CSS-only Tabs -->
+      <div class="auth-tabs">
+        <label for="login-tab" class="tab-btn">Login</label>
+        <label for="register-tab" class="tab-btn">Register</label>
+      </div>
+
+      <!-- Login Form -->
+      <div class="tab-content" id="login-content">
+        <form>
+          <div class="input-group">
+            <i class="fas fa-envelope input-icon"></i>
+            <input type="email" class="form-input" placeholder="Email address" required>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock input-icon"></i>
+            <input type="password" class="form-input" placeholder="Password" required>
+          </div>
+          <div class="forgot-password">
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn" style="width: 100%; margin-bottom: 1rem;">Sign In</button>
+          <div style="text-align: center; color: #6b7280;">
+            Don't have an account? <label for="register-tab" style="color: #4f46e5; cursor: pointer;">Sign up here</label>
+          </div>
+        </form>
+      </div>
+
+      <!-- Register Form -->
+      <div class="tab-content" id="register-content">
+        <form>
+          <div class="input-group">
+            <i class="fas fa-user input-icon"></i>
+            <input type="text" class="form-input" placeholder="Full Name" required>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-envelope input-icon"></i>
+            <input type="email" class="form-input" placeholder="Email address" required>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock input-icon"></i>
+            <input type="password" class="form-input" placeholder="Password" required>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-phone input-icon"></i>
+            <input type="tel" class="form-input" placeholder="Phone Number" required>
+          </div>
+          <button type="submit" class="btn" style="width: 100%;">Create Account</button>
+          <div style="text-align: center; color: #6b7280; margin-top: 1rem;">
+            Already have an account? <label for="login-tab" style="color: #4f46e5; cursor: pointer;">Sign in</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Same footer content -->
+  </footer>
+</body>
+</html>
